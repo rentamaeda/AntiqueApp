@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3752092724CEA8BF00A2F2ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3752092624CEA8BF00A2F2ED /* GoogleService-Info.plist */; };
+		3752092924CF0BB400A2F2ED /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752092824CF0BB400A2F2ED /* CollectionViewCell.swift */; };
+		3752092B24CF164100A2F2ED /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752092A24CF164100A2F2ED /* ImageView.swift */; };
 		37653E4424C978C600A966F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37653E4324C978C600A966F5 /* AppDelegate.swift */; };
 		37653E4624C978C600A966F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37653E4524C978C600A966F5 /* SceneDelegate.swift */; };
 		37653E4824C978C600A966F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37653E4724C978C600A966F5 /* ViewController.swift */; };
@@ -18,11 +21,13 @@
 		37B8AD7724CDE76E0011B11F /* SarchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8AD7624CDE76E0011B11F /* SarchViewController.swift */; };
 		37B8AD7924CDE7DE0011B11F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8AD7824CDE7DE0011B11F /* TabBarController.swift */; };
 		37B8AD7B24CE02D80011B11F /* accountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8AD7A24CE02D80011B11F /* accountViewController.swift */; };
-		37B8AD7D24CE02F20011B11F /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B8AD7C24CE02F20011B11F /* ImageViewController.swift */; };
 		F848B9264B7BCB203ECA02CA /* Pods_AntiqueApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C543063144DDB7B9238FC881 /* Pods_AntiqueApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3752092624CEA8BF00A2F2ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3752092824CF0BB400A2F2ED /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		3752092A24CF164100A2F2ED /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		37653E4024C978C600A966F5 /* AntiqueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AntiqueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37653E4324C978C600A966F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37653E4524C978C600A966F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +41,6 @@
 		37B8AD7624CDE76E0011B11F /* SarchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SarchViewController.swift; sourceTree = "<group>"; };
 		37B8AD7824CDE7DE0011B11F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		37B8AD7A24CE02D80011B11F /* accountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountViewController.swift; sourceTree = "<group>"; };
-		37B8AD7C24CE02F20011B11F /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		7B97B52AC51BE0FD7E6C48E8 /* Pods-AntiqueApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntiqueApp.debug.xcconfig"; path = "Target Support Files/Pods-AntiqueApp/Pods-AntiqueApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A04778EAE31101AE4D82B7F0 /* Pods-AntiqueApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntiqueApp.release.xcconfig"; path = "Target Support Files/Pods-AntiqueApp/Pods-AntiqueApp.release.xcconfig"; sourceTree = "<group>"; };
 		C543063144DDB7B9238FC881 /* Pods_AntiqueApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AntiqueApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,14 +91,16 @@
 				37653E4524C978C600A966F5 /* SceneDelegate.swift */,
 				37653E4724C978C600A966F5 /* ViewController.swift */,
 				37653E4924C978C600A966F5 /* Main.storyboard */,
-				37B8AD7C24CE02F20011B11F /* ImageViewController.swift */,
 				37B8AD7624CDE76E0011B11F /* SarchViewController.swift */,
 				37B8AD7824CDE7DE0011B11F /* TabBarController.swift */,
+				3752092A24CF164100A2F2ED /* ImageView.swift */,
 				37B8AD6E24CD98000011B11F /* LoginViewController.swift */,
+				3752092824CF0BB400A2F2ED /* CollectionViewCell.swift */,
 				37B8AD7A24CE02D80011B11F /* accountViewController.swift */,
 				37653E4C24C978C800A966F5 /* Assets.xcassets */,
 				37653E4E24C978C800A966F5 /* LaunchScreen.storyboard */,
 				37B8AD7224CDE68A0011B11F /* CartViewController.swift */,
+				3752092624CEA8BF00A2F2ED /* GoogleService-Info.plist */,
 				37653E5124C978C800A966F5 /* Info.plist */,
 			);
 			path = AntiqueApp;
@@ -169,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3752092724CEA8BF00A2F2ED /* GoogleService-Info.plist in Resources */,
 				37653E5024C978C800A966F5 /* LaunchScreen.storyboard in Resources */,
 				37653E4D24C978C800A966F5 /* Assets.xcassets in Resources */,
 				37653E4B24C978C600A966F5 /* Main.storyboard in Resources */,
@@ -224,9 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3752092B24CF164100A2F2ED /* ImageView.swift in Sources */,
 				37B8AD6F24CD98000011B11F /* LoginViewController.swift in Sources */,
-				37B8AD7D24CE02F20011B11F /* ImageViewController.swift in Sources */,
 				37653E4824C978C600A966F5 /* ViewController.swift in Sources */,
+				3752092924CF0BB400A2F2ED /* CollectionViewCell.swift in Sources */,
 				37B8AD7B24CE02D80011B11F /* accountViewController.swift in Sources */,
 				37B8AD7724CDE76E0011B11F /* SarchViewController.swift in Sources */,
 				37653E4424C978C600A966F5 /* AppDelegate.swift in Sources */,
