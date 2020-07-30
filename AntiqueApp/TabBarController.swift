@@ -1,6 +1,6 @@
 import UIKit
+import FirebaseAuth
 import Firebase // 先頭でFirebaseをimportしておく
-import FirebaseAuth 
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
@@ -14,21 +14,25 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     }
 
    // タブバーのアイコンがタップされた時に呼ばれるdelegateメソッドを処理する。
-     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-       
-             return true
-         
-     }
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+            if viewController is CartViewController {
+                // ImageSelectViewControllerは、タブ切り替えではなくモーダル画面遷移する
+                let imageSelectViewController = storyboard!.instantiateViewController(withIdentifier: "ImageSelect")
+                present(imageSelectViewController, animated: true)
+                return false
+            } else {
+                // その他のViewControllerは通常のタブ切り替えを実施
+                return true
+            }
+        }
     //ログイン処理
     override func viewDidAppear(_ animated: Bool) {
-           super.viewDidAppear(animated)
-
+            super.viewDidAppear(animated)
            // currentUserがnilならログインしていない
-           if Auth.auth().currentUser == nil {
-            // ログインしていないときの処理
-                let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login")
-                self.present(loginViewController!, animated: true, completion: nil)
-            
-           }
+                  if Auth.auth().currentUser == nil {
+                      // ログインしていないときの処理
+                      let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login")
+                      self.present(loginViewController!, animated: true, completion: nil)
+                  }
        }
 }
