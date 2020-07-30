@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var displayNameTextField: UITextField!
     @IBAction func handleLoginButton(_ sender: Any) {
+        // ログインボタンをタップしたときに呼ばれるメソッド
           if let address = mailAddressTextField.text, let password = passwordTextField.text {
 
                            // アドレスとパスワード名のいずれかでも入力されていない時は何もしない
